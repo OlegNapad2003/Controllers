@@ -1,0 +1,32 @@
+﻿@model IEnumerable<MVC.Models.Main>
+@{
+    //ViewData["Title"] = "Список заказов";
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Страховой сервис</title>
+</head>
+<body>
+    <h3>Заказы</h3>
+    <table>
+        <tr>
+            <td>ФИО</td>
+            <td>Опыт</td>
+            <td>Индекс</td>
+            <td></td>
+        </tr>
+        @foreach (var phone in Model)
+        {
+            <tr>
+                <td>@phone.FIO</td>
+                <td>@phone.Stage</td>
+                <td>@phone.Index</td>
+                <td><a href="~/Home/Buy/@phone.Id">Оформить</a></td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
