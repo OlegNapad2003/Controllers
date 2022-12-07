@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MVC.Models;
 namespace MobileStore.Controllers
 {
@@ -12,7 +11,7 @@ namespace MobileStore.Controllers
         }
         public IActionResult Index()
         {
-            return View(db.Mains.ToList());
+            return View(db.Clients.ToList());
         }
     }
 }

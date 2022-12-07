@@ -2,7 +2,7 @@
 
 namespace MVC.Models
 {
-    public class Main
+    public class Client
     {
         [Key]
         public int Id { get; set; }

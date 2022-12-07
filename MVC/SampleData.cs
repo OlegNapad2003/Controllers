@@ -3,28 +3,28 @@ using System.Linq;
 using System.Numerics;
 
 
-namespace MobileStore
+namespace Filling
 {
     public static class SampleData
     {
         public static void Initialize(Context context)
         {
-            if (!context.Mains.Any())
+            if (!context.Clients.Any())
             {
-                context.Mains.AddRange(
-                    new Main
+                context.Clients.AddRange(
+                    new Client
                     {
                         FIO = "Petrov Petr Petrovich",
                         Stage = 20,
                         Index = 1234
                     },
-                    new Main
+                    new Client
                     {
                         FIO = "Ivanov Ivan Ivanovich",
                         Stage = 3,
                         Index = 2341
                     },
-                    new Main
+                    new Client
                     {
                         FIO = "Kuzmin Antob Igorevich",
                         Stage = 2,
